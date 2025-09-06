@@ -411,6 +411,53 @@ nav ul li a.active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.volunteer {
+  max-width: 800px;
+  margin: 40px 0;          /* pushes only top & bottom, no auto-centering */
+  padding: 30px;
+  background: #f9faff;
+  border-left: 6px solid #2a5298;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;        /* makes sure text is left aligned */
+}
+
+
+.volunteer p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.volunteer ul {
+  margin: 16px 0 16px 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.volunteer ul li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  font-size: 1rem;
+}
+
+/* Custom bullet */
+.volunteer ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2a5298;
+  font-weight: bold;
+}
+
+.volunteer strong {
+  color: #2a5298;
+}
+
 /* Lightbox */
 #lightbox {
   position: fixed;
