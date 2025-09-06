@@ -339,6 +339,108 @@ nav ul li a.active {
   color: #555;
 }
 
+.testimonial-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  padding: 30px 20px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.testimonial {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.testimonial h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2a5298;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1a3570;
+}
+
+.btn.left {
+  left: -20px;
+}
+
+.btn.right {
+  right: -20px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive for phones */
+@media (max-width: 600px) {
+  .testimonial-container {
+    padding: 20px 15px;
+  }
+
+  .testimonial p {
+    font-size: 1rem;
+  }
+
+  .testimonial h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .btn.left {
+    left: 5px;
+  }
+
+  .btn.right {
+    right: 5px;
+  }
+}
+
 .partners {
   padding: 60px 20px;
   text-align: center;
@@ -413,18 +515,19 @@ nav ul li a.active {
 
 .volunteer {
   max-width: 800px;
-  margin: 40px 0;          /* pushes only top & bottom, no auto-centering */
+  margin: 40px 0;
+  /* pushes only top & bottom, no auto-centering */
   padding: 30px;
   background: #f9faff;
   border-left: 6px solid #2a5298;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-family: "Segoe UI", sans-serif;
   line-height: 1.7;
   color: #333;
-  text-align: left;        /* makes sure text is left aligned */
+  text-align: left;
+  /* makes sure text is left aligned */
 }
-
 
 .volunteer p {
   margin-bottom: 16px;
@@ -456,6 +559,22 @@ nav ul li a.active {
 
 .volunteer strong {
   color: #2a5298;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+  /* golden hover color */
 }
 
 /* Lightbox */
